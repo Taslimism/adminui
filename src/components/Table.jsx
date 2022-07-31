@@ -39,7 +39,9 @@ const Table = ({
 				<tbody>
 					{userData.length > 0 &&
 						userData.map((data, index) => (
-							<tr className='border ' key={data.id}>
+							<tr
+								className={`border ${checkbox[index] ? "bg-gray-400" : ""}`}
+								key={data.id}>
 								<td className='px-8 py-2'>
 									<input
 										checked={checkbox[index]}

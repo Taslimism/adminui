@@ -23,8 +23,8 @@ function App() {
 	const handleDelete = (id) => {
 		setUserData((prevData) => {
 			const newData = [...prevData];
-			const data = newData.filter((data) => Number(data.id) !== id);
-			console.log(data);
+			const data = newData.filter((data) => Number(data.id) !== Number(id));
+
 			return data;
 		});
 	};
